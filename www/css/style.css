@@ -79,7 +79,7 @@ Style HEADER
 
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 2rem;
   }
 
   header aside p{
