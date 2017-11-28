@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>LoginApp</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body class="container">
+        <header class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="/"><img id="logoDWS" src="/img/logoDWS.svg" alt="Logo Digital Workshop"></a></li>
+
+                    <!-- 
+                    Affichage dynamique de la navigation 
+                    -->
+                    <% if(user) { %>
+                        <li role="presentation"><a href="/users/logout">Deconnexion</a></li>
+                    <% } else {%>
+                        <li role="presentation"><a href="/users/login">Connexion</a></li>
+                    <% } %>
+                </ul>
+            </nav>
+
+            <aside class="row">
+                <div class="col-lg-12">
+                    <% if(success_msg.length > 0){ %>
+                        <p><%= success_msg %></p>
+                    <% } %>
+                    <% if(error_msg.length > 0){ %>
+                        <p><%= error_msg %></p>
+                    <% } %>
+                    <% if(error.length > 0){ %>
+                        <p><%= error %></p>
+                    <% } %>
+                </div>
+            </aside>
+
+        </header>
+        
+        <main>
+            

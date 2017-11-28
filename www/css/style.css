@@ -1,0 +1,195 @@
+/* 
+Reset
+*/
+  *{
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body{
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header, main, footer p{
+    max-width: 35rem;
+    margin: auto;
+  }
+/**/
+
+
+/* 
+Style HEADER
+*/
+  header{
+    position: relative;
+  }
+
+  nav {
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-align: right;
+    text-transform: uppercase;
+    
+    position: relative;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid #eee;
+  }
+
+  nav li:not(:first-child){
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  nav li:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  [src="/img/logoDWS.svg"] {
+    width: 4rem;
+  }
+
+  header aside {
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  header aside p{
+    background-color: #eee;
+    padding: .5rem;
+  }
+/**/
+
+
+/* 
+Style MAIN
+*/
+  main {
+    padding: 3rem 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #363794;
+  }
+
+  h1 + p {
+    margin-bottom: 2rem;
+  }
+/**/
+
+
+/* 
+Style FORM
+*/
+  form {
+    border: .1rem solid #eee;
+    padding: 2rem;
+  }
+
+  label, input, button{
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;  
+  }
+
+  label{
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+  }
+
+  label span {
+    font-size: .8em;
+    color: red;
+  }
+
+  input {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #363794;
+    background-color: #eee;
+  }
+
+  [type="submit"], [type="submit"] + a {
+    text-shadow: 0.3rem 0.3rem 0.5rem #8d2a20;
+    color: white;
+    padding: 1rem;
+    background: #cb3728;
+    border-bottom: .5rem solid #8d2920;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  [type="submit"] + a {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: none;
+    color: black;
+
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+    background: #eee;
+    border-color: #c3bfbf;
+  }
+/**/
+
+
+/* 
+Style FOOTER
+*/
+  footer{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+  }
+
+  footer p {
+    background-color: #eee;
+    padding: 1rem;
+    border-bottom: 1rem solid white;
+  }
+
+  footer a{
+    color: #cb3728;
+  }
+/**/
+
